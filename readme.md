@@ -12,7 +12,7 @@
 <h3>Iniciando o ambiente Virtual para instalar o Django</h3>
 <pre>E:\Documentos\Udemy\Django\ola_django> .\venv\Scripts\activate</pre>
 
-<p>Se houve erro ao executar o script, temos uma solução mais abaixo!</p>
+<p style="background: red">Se houve erro ao executar o script, temos uma solução mais abaixo!</p>
 
 <h4>Desligando o Venv</h4>
 <pre>(venv) PS E:\Documentos\Udemy\Django\ola_django> deactivate</pre>
@@ -34,10 +34,6 @@ Quit the server with CTRL-BREAK.</pre>
 <img src="assets/DjangoHomepage.png" alt="Django - The install worked successfully! Congratulations!">
 
 <p>Para desligar o servidor, basta apertar <code>CTRL + C</code>.</p>
-
-<h2>Extra</h2>
-<h3>Criando o requirements.txt</h3>
-<pre>pip freeze > requirements.txt</pre>
 
 <!-- Trantado Erro -->
 <h2>Possível Erro</h2>
@@ -66,6 +62,25 @@ O arquivo C:\Users\erick\Documentos\Django\ola_django\venv\Scripts\Activate.ps1 
 <p>Agora, tente ativar o ambiente virtual no PowerShell:</p>
 <pre>.\venv\Scripts\activate</pre>
 
+<!-- Extra -->
+<h2>Extra</h2>
+<h3>Bibliotecas Instaladas no seu Ambiente</h3>
+<p>Conforme visto anteriormente, usando o comando pip install você instala bibliotecas no seu ambiente virtual. Mas como vemos quais nós temos instaladas no ambiente? Simples:
+Listando todas as Bibliotecas Instaladas</p>
+<p>O comando pip freeze lista os pacotes instalados com suas versões exatas.</p>
+<pre>pip freeze</pre>
+
+<h3>Para mandar as bibliotecas necessárias para um arquivo</h3>
+<p>Você pode mandar essa lista de bibliotecas necessárias para o projeto em um documento .txt da seguinte forma:</p>
+<pre>pip freeze > requirements.txt</pre>
+
+<h3>Para instalar as bibliotecas necessárias</h3>
+<p>A pessoa, ou até mesmo você se receber um documento requirements.txt e precisar instalar, vai usar o seguinte comando para instalar as bibliotecas no ambiente do projeto:</p>
+<pre>pip install -r requirements.txt</pre>
+
+<h3>Atualizando o pip</h3>
+<p>Algumas vezes a biblioteca pode dar problema, como ocorreu nesse projeto, e para resolver o problema de atualização, basta utilizar o seguinte comando para atualizar as bibliotecas:</p>
+<pre>pip install pip --upgrade</pre>
 
 <!-- <h2>Iniciando o projeto com django-admin startproject</h2>
 
