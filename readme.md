@@ -22,6 +22,17 @@
 
 <h3>Começando o projeto na pasta "ola_django"</h3>
 <pre>(venv) PS C:\Documentos\Django\ola_django> django-admin.exe startproject project .</pre>
+<p>Isso criará uma estrutura de pastas como esta:</p>
+<pre>
+📁ola_django/
+ └📄manage.py
+ └📁project
+   └📄__init__.py
+   └📄asgi.py
+   └📄settings.py
+   └📄urls.py
+   └📄wsgi.py
+</pre>
 
 <h3>Verificando se o Django já está Online</h3>
 <pre>(venv) PS C:\Documentos\Django\ola_django> python manage.py runserver</pre>
@@ -80,35 +91,3 @@ Listando todas as Bibliotecas Instaladas:</h3>
 <h3>Atualizando o pip</h3>
 <p>Algumas vezes a biblioteca pode dar problema, como ocorreu nesse projeto, e para resolver o problema de atualização, basta utilizar o seguinte comando para atualizar as bibliotecas:</p>
 <pre>pip install pip --upgrade</pre>
-
-<!-- <h2>Iniciando o projeto com django-admin startproject</h2>
-
-<h3></h3>
-<pre></pre>
-
-<h3></h3>
-<pre></pre>
-
-<h3></h3>
-<pre></pre>
-
-<h3></h3>
-<pre></pre>
-
-<h3></h3>
-<pre></pre>
-
-<h3></h3>
-<pre></pre>
-
-<h3></h3>
-<pre></pre>
-
-<h3></h3>
-<pre></pre>
-
-<h3></h3>
-<pre></pre>
-
-<h3></h3>
-<pre></pre> -->
