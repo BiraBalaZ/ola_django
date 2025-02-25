@@ -4,27 +4,27 @@
 <h3>No diretório que você vai criar o projeto e com o Python instalado na máquina, você vai criar um ambiente virtual</h3>
 
 <h3>Criando a pasta do projeto na pasta Django</h3>
-<pre>E:\Documentos\Udemy\Django\> mkdir ola_django</pre>
+<pre>C:\Documentos\Django\> mkdir ola_django</pre>
 
 <h3>Criando o ambiente virtual</h3>
-<pre>E:\Documentos\Udemy\Django\ola_django> python -m venv venv</pre>
+<pre>C:\Documentos\Django\ola_django> python -m venv venv</pre>
 
 <h3>Iniciando o ambiente Virtual para instalar o Django</h3>
-<pre>E:\Documentos\Udemy\Django\ola_django> .\venv\Scripts\activate</pre>
+<pre>C:\Documentos\Django\ola_django> .\venv\Scripts\activate</pre>
 
 <p style="background: red">Se houve erro ao executar o script, temos uma solução mais abaixo!</p>
 
 <h4>Desligando o Venv</h4>
-<pre>(venv) PS E:\Documentos\Udemy\Django\ola_django> deactivate</pre>
+<pre>(venv) PS C:\Documentos\Django\ola_django> deactivate</pre>
 
 <h3>Instalando o Django</h3>
-<pre>(venv) PS E:\Documentos\Udemy\Django\ola_django> pip install django</pre>
+<pre>(venv) PS C:\Documentos\Django\ola_django> pip install django</pre>
 
 <h3>Começando o projeto na pasta "ola_django"</h3>
-<pre>(venv) PS E:\Documentos\Udemy\Django\ola_django> django-admin.exe startproject project .</pre>
+<pre>(venv) PS C:\Documentos\Django\ola_django> django-admin.exe startproject project .</pre>
 
 <h3>Verificando se o Django já está Online</h3>
-<pre>python manage.py runserver</pre>
+<pre>(venv) PS C:\Documentos\Django\ola_django> python manage.py runserver</pre>
 
 <p>Output:</p>
 <pre>Starting development server at http://127.0.0.1:8000/
@@ -41,7 +41,7 @@ Quit the server with CTRL-BREAK.</pre>
 <img src="assets/error01.jpeg" alt="venv\Scripts\Activate.ps1 não pode ser carregado porque a execução de scripts foi desabilitada neste sistema">
 
 <p>No meu caso:</p>
-<pre>ola_django> .\venv\Scripts\activate
+<pre>C:\Documentos\Django\ola_django> .\venv\Scripts\activate
 O arquivo C:\Users\erick\Documentos\Django\ola_django\venv\Scripts\Activate.ps1 não pode ser carregado porque a execução de scripts foi desabilitada neste sistema. Para obter mais informações, consulte about_Execution_Policies em https://go.microsoft.com/fwlink/?LinkID=135170.</pre>
 
 <p>Esse erro acontece porque o Windows tem uma política de segurança que impede a execução de scripts do PowerShell por padrão. Para resolver isso, você precisa alterar a política de execução. Solução:</p>
@@ -65,8 +65,8 @@ O arquivo C:\Users\erick\Documentos\Django\ola_django\venv\Scripts\Activate.ps1 
 <!-- Extra -->
 <h2>Extra</h2>
 <h3>Bibliotecas Instaladas no seu Ambiente</h3>
-<p>Conforme visto anteriormente, usando o comando pip install você instala bibliotecas no seu ambiente virtual. Mas como vemos quais nós temos instaladas no ambiente? Simples:
-Listando todas as Bibliotecas Instaladas</p>
+<h3>Conforme visto anteriormente, usando o comando pip install você instala bibliotecas no seu ambiente virtual. Mas como vemos quais nós temos instaladas no ambiente? Simples:
+Listando todas as Bibliotecas Instaladas:</h3>
 <p>O comando pip freeze lista os pacotes instalados com suas versões exatas.</p>
 <pre>pip freeze</pre>
 
