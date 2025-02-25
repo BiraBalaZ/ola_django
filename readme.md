@@ -14,7 +14,7 @@
 
 <p style="background: red">Se houve erro ao executar o script, temos uma solução <a href="#erro">mais abaixo</a>!</p>
 
-<h4>Desligando o Venv</h4>
+<h3>Desligando o Venv</h3>
 <pre>(venv) PS C:\Documentos\Django\ola_django> deactivate</pre>
 
 <h3>Instalando o Django</h3>
