@@ -25,8 +25,17 @@
 
 <h3>Verificando se o Django já está Online</h3>
 <pre>python manage.py runserver</pre>
-<pre>http://127.0.0.1:8000/</pre>
 
+<p>Output:</p>
+<pre>Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.</pre>
+
+<p>Acessando: http://127.0.0.1:8000/</p>
+<img src="assets/DjangoHomepage.png" alt="Django - The install worked successfully! Congratulations!">
+
+<p>Para desligar o servidor, basta apertar <code>CTRL + C</code>.</p>
+
+<h2>Extra</h2>
 <h3>Criando o requirements.txt</h3>
 <pre>pip freeze > requirements.txt</pre>
 
