@@ -12,7 +12,7 @@
 <h3>Iniciando o ambiente Virtual para instalar o Django</h3>
 <pre>C:\Documentos\Django\ola_django> .\venv\Scripts\activate</pre>
 
-<p style="background: red">Se houve erro ao executar o script, temos uma solução mais abaixo!</p>
+<p style="background: red">Se houve erro ao executar o script, temos uma solução <a href="#erro">mais abaixo</a>!</p>
 
 <h4>Desligando o Venv</h4>
 <pre>(venv) PS C:\Documentos\Django\ola_django> deactivate</pre>
@@ -36,8 +36,7 @@ Quit the server with CTRL-BREAK.</pre>
 <p>Para desligar o servidor, basta apertar <code>CTRL + C</code>.</p>
 
 <!-- Trantado Erro -->
-<h2>Possível Erro</h2>
-
+<h2 id="erro">Possível Erro</h2>
 <img src="assets/error01.jpeg" alt="venv\Scripts\Activate.ps1 não pode ser carregado porque a execução de scripts foi desabilitada neste sistema">
 
 <p>No meu caso:</p>
@@ -65,7 +64,7 @@ O arquivo C:\Users\erick\Documentos\Django\ola_django\venv\Scripts\Activate.ps1 
 <!-- Extra -->
 <h2>Extra</h2>
 <h3>Bibliotecas Instaladas no seu Ambiente</h3>
-<h3>Conforme visto anteriormente, usando o comando pip install você instala bibliotecas no seu ambiente virtual. Mas como vemos quais nós temos instaladas no ambiente? Simples:
+<h3>Conforme visto anteriormente, usando o comando <a href="https://pt.wikipedia.org/wiki/Pip_(gerenciador_de_pacotes)">pip install</a> você instala bibliotecas no seu ambiente virtual. Mas como vemos quais nós temos instaladas no ambiente? Simples:
 Listando todas as Bibliotecas Instaladas:</h3>
 <p>O comando pip freeze lista os pacotes instalados com suas versões exatas.</p>
 <pre>pip freeze</pre>
