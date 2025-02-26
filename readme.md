@@ -4,24 +4,24 @@
 <h3>No diretório que você vai criar o projeto e com o Python instalado na máquina, você vai criar um ambiente virtual</h3>
 
 <h3>Criando a pasta do projeto na pasta Django</h3>
-<pre>C:\Documentos\Django\> mkdir ola_django</pre>
+<pre>C:\Documentos\> mkdir ola_django</pre>
 
 <h3>Criando o ambiente virtual</h3>
-<pre>C:\Documentos\Django\ola_django> python -m venv venv</pre>
+<pre>C:\Documentos\ola_django> python -m venv venv</pre>
 
 <h3>Iniciando o ambiente Virtual para instalar o Django</h3>
-<pre>C:\Documentos\Django\ola_django> .\venv\Scripts\activate</pre>
+<pre>C:\Documentos\ola_django> .\venv\Scripts\activate</pre>
 
 <p style="background: red">Se houve erro ao executar o script, temos uma solução <a href="#erro">mais abaixo</a>!</p>
 
 <h3>Desligando o Venv</h3>
-<pre>(venv) PS C:\Documentos\Django\ola_django> deactivate</pre>
+<pre>(venv) PS C:\Documentos\ola_django> deactivate</pre>
 
 <h3>Instalando o Django</h3>
-<pre>(venv) PS C:\Documentos\Django\ola_django> pip install django</pre>
+<pre>(venv) PS C:\Documentos\ola_django> pip install django</pre>
 
 <h3>Começando o projeto na pasta "ola_django"</h3>
-<pre>(venv) PS C:\Documentos\Django\ola_django> django-admin.exe startproject project .</pre>
+<pre>(venv) PS C:\Documentos\ola_django> django-admin.exe startproject project .</pre>
 <p>Isso criará uma estrutura de pastas como esta:</p>
 <pre>
 📁ola_django/
@@ -35,7 +35,7 @@
 </pre>
 
 <h3>Verificando se o Django já está Online</h3>
-<pre>(venv) PS C:\Documentos\Django\ola_django> python manage.py runserver</pre>
+<pre>(venv) PS C:\Documentos\ola_django> python manage.py runserver</pre>
 
 <p>Output:</p>
 <pre>Starting development server at http://127.0.0.1:8000/
@@ -48,10 +48,8 @@ Quit the server with CTRL-BREAK.</pre>
 
 <!-- Trantado Erro -->
 <h2 id="erro">Possível Erro</h2>
-<img src="assets/error01.jpeg" alt="venv\Scripts\Activate.ps1 não pode ser carregado porque a execução de scripts foi desabilitada neste sistema">
-
-<p>No meu caso:</p>
-<pre>C:\Documentos\Django\ola_django> .\venv\Scripts\activate
+<img src="assets/error01.png" alt="venv\Scripts\Activate.ps1 não pode ser carregado porque a execução de scripts foi desabilitada neste sistema">
+<pre>C:\Documentos\ola_django> .\venv\Scripts\activate
 O arquivo C:\Users\erick\Documentos\Django\ola_django\venv\Scripts\Activate.ps1 não pode ser carregado porque a execução de scripts foi desabilitada neste sistema. Para obter mais informações, consulte about_Execution_Policies em https://go.microsoft.com/fwlink/?LinkID=135170.</pre>
 
 <p>Esse erro acontece porque o Windows tem uma política de segurança que impede a execução de scripts do PowerShell por padrão. Para resolver isso, você precisa alterar a política de execução. Solução:</p>
