@@ -68,6 +68,7 @@ O arquivo C:\Users\erick\Documentos\Django\ola_django\venv\Scripts\Activate.ps1 
 <p>Para permitir a execução de scripts na sua máquina, rode este comando:</p>
 <pre>Set-ExecutionPolicy Unrestricted -Scope CurrentUser</pre>
 
+<p>Confirme digitando <code>A</code> (Sim para tudo).</p>
 <h3>4. Ativar o ambiente virtual novamente</h3>
 <p>Agora, tente ativar o ambiente virtual no PowerShell:</p>
 <pre>.\venv\Scripts\activate</pre>
