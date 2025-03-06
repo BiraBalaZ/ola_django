@@ -17,7 +17,7 @@ li {
     display: inline;
 }
 
-a {
+/* a {
     color: black;
     text-decoration: none;
     transition: .5s;
@@ -27,7 +27,7 @@ a:hover {
     text-decoration: underline;
     font-weight: bold;
     font-size: large;
-}
+} */
 
 .content {
     display: grid;
