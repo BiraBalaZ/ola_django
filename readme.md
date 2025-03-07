@@ -90,3 +90,33 @@ Listando todas as Bibliotecas Instaladas:</h3>
 <h3>Atualizando o pip</h3>
 <p>Algumas vezes a biblioteca pode dar problema, como ocorreu nesse projeto, e para resolver o problema de atualização, basta utilizar o seguinte comando para atualizar as bibliotecas:</p>
 <pre>pip install pip --upgrade</pre>
+
+<h2>Coletando Arquivos Estáticos</h2>
+<p>Para isso, primeiro você precisa ir em <code>settings.py</code> e criar a variável <code>STATIC_ROOT</code> para apontar o caminho e a pasta que será coletado os arquivos estáticos da aplicação:</p>
+<pre>
+BASE_DIR = Path(__file__).resolve().parent.parent
+STATIC_ROOT = BASE_DIR / 'static_files'
+</pre>
+
+<p>E para coletar os arquivos:</p>
+<pre>python manage.py collectstatic</pre>
+
+<p>Isso criará a pasta "static_files" na estrutura do projeto (baseado no meu projeto atual):</p>
+<pre>
+📁ola_django/
+ └📁assets
+ └📁base
+ └📁blog
+ └📁home
+ └📁project
+ └📁static_files <-----------------
+ └📁venv
+ └📄.gitignore
+ └📄db.sqlite3
+ └📄manage.py
+ └📄readme.md
+ └📄requirements.txt
+</pre>
+
+<p>Lembrando que esta pasta deve ser colocada no <code>.gitignore</code> para ser ignorada na hora de subir o projeto!</p>
+
