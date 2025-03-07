@@ -13,20 +13,46 @@ body {
     background-color: #F1F1F1;
 }
 
-li {
+.cabecalho {
+    display: inline;
+}
+
+.cabecalho nav {
+    background: linear-gradient(90deg, rgb(98, 98, 100) 0%, rgb(177, 177, 179) 35%, rgb(214, 213, 213) 100%);
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+.menu {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.menu li {
+    margin: 0 15px;
     display: inline;
 }
 
 a {
     color: black;
     text-decoration: none;
-    transition: .5s;
+    transition: transform 0.3s ease, font-weight 0.3s ease;
+    display: inline-block; /* Garante que o efeito não afete o layout */
 }
 
 a:hover {
     text-decoration: underline;
     font-weight: bold;
-    font-size: 110%;
+    transform: scale(1.1); /* Mantém o tamanho do espaço e só aumenta visualmente */
 }
 
 .content {
